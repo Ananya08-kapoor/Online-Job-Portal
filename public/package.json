@@ -1,0 +1,21 @@
+{
+  "name": "workspark",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WorkSpark online job portal: static front end + Vercel serverless API + Postgres",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node dev.js",
+    "create-admin": "node scripts/create-admin.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.9.6",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.17"
+  }
+}
